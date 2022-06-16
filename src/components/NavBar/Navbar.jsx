@@ -5,7 +5,7 @@ export default function NavBar() {
   console.log(isNavOpen);
   return (
     <>
-      <nav className="flex border-b-2 ">
+      <nav className="flex bg-gray-200">
         {/* Logo */}
         <div className="flex justify-start items-center w-full h-24 ml-3  ">
           <a
