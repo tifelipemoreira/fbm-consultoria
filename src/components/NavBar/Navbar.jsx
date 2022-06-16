@@ -1,7 +1,7 @@
 import { useState } from "react"; // import state
 import { HiOutlineMenu } from "react-icons/hi";
 export default function NavBar() {
-  const [isNavOpen, setIsNavOpen] = useState(true); 
+  const [isNavOpen, setIsNavOpen] = useState(true);
   console.log(isNavOpen);
   return (
     <>
@@ -13,10 +13,10 @@ export default function NavBar() {
             href="#"
           >
             FBM
+            <span className="p-1">
+              Tecnologia
+            </span>
           </a>
-          <span className="text-4xl m-1 font-Roboto font-semibold italic">
-            Tecnologia
-          </span>
         </div>
         {/* menu desktop */}
         <div className="flex ">
