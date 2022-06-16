@@ -1,7 +1,7 @@
 import { useState } from "react"; // import state
 import { HiOutlineMenu } from "react-icons/hi";
 export default function NavBar() {
-  const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+  const [isNavOpen, setIsNavOpen] = useState(true); 
   console.log(isNavOpen);
   return (
     <>
