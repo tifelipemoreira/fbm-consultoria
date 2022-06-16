@@ -3,16 +3,15 @@ import NavBar from "../components/NavBar/Navbar";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Heads
-        title="testes"
+        title="FBM Tecnologia - Home"
         name="home"
         content="Página Inicial"
         rel="ico"
         href="/favicon.ico"
       ></Heads>
-      <NavBar pgAtual="home"></NavBar>
-      <div className="bg-gray-900 w-full">teste2</div>
+      <NavBar></NavBar>
     </div>
   );
 }
