@@ -1,15 +1,16 @@
 import { useState } from "react"; // import state
 import { HiOutlineMenu } from "react-icons/hi";
+
 export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(true);
-  console.log(isNavOpen);
+  const teste = "flex justify-start items-center w-full h-24 ml-3 "
   return (
     <>
-      <nav className="flex bg-gray-200">
+      <nav className="flex bg-blue-600">
         {/* Logo */}
-        <div className="flex justify-start items-center w-full h-24 ml-3  ">
+        <div className={teste}>
           <a
-            className="text-4xl font-Roboto italic font-bold text-blue-900 "
+            className="text-4xl font-Roboto italic font-bold text-white "
             href="#"
           >
             FBM
@@ -21,16 +22,16 @@ export default function NavBar() {
         {/* menu desktop */}
         <div className="flex ">
           <ul className=" hidden lg:flex items-center">
-            <li className="p-5  hover:bg-blue-900 hover:text-white border-2 rounded-md w-28 text-center mr-10">
+            <li className="p-5  hover:bg-blue-600 hover:text-white border-2 rounded-md w-28 text-center mr-10">
               <a href="#Home">Home</a>
             </li>
-            <li className="p-5 hover:bg-blue-900 hover:text-white border-2 rounded-md w-28 text-center mr-10 ">
+            <li className="p-5 hover:bg-blue-600 hover:text-white border-2 rounded-md w-28 text-center mr-10 ">
               <a href="#Servicos">Serviços</a>
             </li>
-            <li className="p-5 hover:bg-blue-900 hover:text-white border-2 rounded-md w-28 text-center mr-10 ">
+            <li className="p-5 hover:bg-blue-600 hover:text-white border-2 rounded-md w-28 text-center mr-10 ">
               <a href="#Portifolio">Portifólio</a>
             </li>
-            <li className="p-5 hover:bg-blue-900 hover:text-white border-2 rounded-md w-28 text-center mr-10 ">
+            <li className="p-5 hover:bg-blue-600 hover:text-white border-2 rounded-md w-28 text-center mr-10 ">
               <a href="#Contatos">Contatos</a>
             </li>
           </ul>
@@ -49,7 +50,7 @@ export default function NavBar() {
           className={
             isNavOpen
               ? "hidden"
-              : "lg:hidden w-full bg-blue-900 rounded-md  absolute flex justify-center"
+              : "lg:hidden w-full bg-blue-600 rounded-md  absolute flex justify-center"
           }
         >
           <ul className=" p-5 text-white text-2xl  ">

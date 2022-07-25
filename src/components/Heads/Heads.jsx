@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 export default function Heads(props) {
-
   return (
     <Head>
       <title>{props.title}</title>

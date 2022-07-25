@@ -1,11 +1,9 @@
 import { useState } from "react"; // import state
 import { GrInstagram, GrLinkedin } from "react-icons/gr";
 export default function Footer() {
-  const [isNavOpen, setIsNavOpen] = useState(true);
-  console.log(isNavOpen);
   return (
     <>
-      <footer className="relative bg-gray-200">
+      <footer className="relative bg-blue-600">
         <div className="flex justify-center">
           <a className="m-2 mr-6"
             href="https://www.instagram.com/tifelipemoreira/" target={"_blank"} rel="noreferrer noopener"
