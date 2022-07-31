@@ -16,16 +16,16 @@ export default function Home() {
       <div className="flex justify-center items-center w-full h-96 border-4 border-red-900">
         <div>
           <h1 className="text-center">
-            Tecnologia Ganha Cada dia mais espaço<br></br>
-            <p>Acompanhar esse movimento passou a ser obrigatório</p>
+            Serviços de Criação de Sites<br></br>
+            <p></p>
           </h1>
         </div>
       </div>
       <div className="flex justify-center items-center w-full h-96 border-4 border-red-900">
         <div>
           <h1 className="text-center">
-            Tecnologia Ganha Cada dia mais espaço<br></br>
-            <p>Acompanhar esse movimento passou a ser obrigatório</p>
+            Consultoria ERP<br></br>
+            <p></p>
           </h1>
         </div>
       </div>
