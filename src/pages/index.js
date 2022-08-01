@@ -1,10 +1,11 @@
 import Heads from "../components/Heads/Heads";
 import NavBar from "../components/NavBar/Navbar";
 import Footer from "../components/Footer/Footer";
-
+// exemplos https://github.com/ndpniraj/react-ecom/tree/master/src/components
+//https://github.com/Sridhar-C-25/reacttailwind_footer
 export default function Home() {
   return (
-    <div >
+    <div>
       <Heads
         title="FBM Tecnologia - Home"
         name="home"
@@ -12,7 +13,7 @@ export default function Home() {
         rel="ico"
         href="/favicon.ico"
       ></Heads>
-        <NavBar></NavBar>
+      <NavBar></NavBar>
       <div className="flex justify-center items-center w-full h-96 border-4 border-red-900">
         <div>
           <h1 className="text-center">
@@ -29,7 +30,7 @@ export default function Home() {
           </h1>
         </div>
       </div>
-        <Footer></Footer>
+      <Footer></Footer>
     </div>
   );
 }
