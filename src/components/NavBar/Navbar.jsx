@@ -8,8 +8,7 @@ export default function NavBar() {
     <>
       <nav className="flex bg-fbmprimary">
         {/* Logo */}
-        <div className="flex justify-start items-center w-full h-24 ml-3">
-          
+        <div className="flex justify-start items-center w-full h-28 ml-3">
           <Image 
             src={logo}
             alt="Logo"
@@ -37,7 +36,7 @@ export default function NavBar() {
         {/* menu mobile  */}
 
         <div
-          className="lg:hidden flex justify-center items-center p-6"
+          className="lg:hidden flex justify-center items-center p-6  "
           onClick={() => setIsNavOpen((isNavOpen) => !isNavOpen)}
         >
           <HiOutlineMenu className="h-10 w-10 " color="white"></HiOutlineMenu>
@@ -48,12 +47,12 @@ export default function NavBar() {
         <div
           className={
             isNavOpen
-              ? "hidden"
-              : "lg:hidden w-full  bg-fbmprimary rounded-md  absolute flex justify-center"
+              ? "hidden "
+              : "lg:hidden  w-full bg-fbmprimary rounded-md  absolute flex justify-center  "
           }
         >
-          <ul className=" p-5 text-white text-2xl  ">
-            <li className="hover:underline rounded-md text-center w-full p-2 m-1 ">
+          <ul className=" p-5 text-white text-2xl ">
+            <li className="hover:underline rounded-md text-center w-full p-2 m-1  ">
               <a href="#Home">Home</a>
             </li>
             <li className="hover:underline rounded-md text-center w-full p-2 m-1 ">
