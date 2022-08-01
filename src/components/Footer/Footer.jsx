@@ -1,6 +1,7 @@
 import React from "react";
 import ItemsContainer from "./ItemsContainer";
 import SocialIcons from "./SocialIcons";
+
 import { Icons } from "./Menus";
 
 const Footer = () => {
@@ -13,7 +14,8 @@ const Footer = () => {
       >
         <span>FBM Tecnologia © 2022 Appy. All rights reserved.</span>
         <span>Terms · Privacy Policy</span>
-        <SocialIcons Icons={Icons} />
+
+         <SocialIcons Icons={Icons} /> 
       </div>
     </footer>
   );
