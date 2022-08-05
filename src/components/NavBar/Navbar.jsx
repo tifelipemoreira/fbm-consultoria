@@ -19,7 +19,7 @@ export default function NavBar() {
         {/* menu desktop */}
         <div className="flex ">
           <ul className=" hidden lg:flex items-center">
-            <li className="p-5  hover:bg-fbmsecondary text-white hover:border-2 rounded-md w-28 text-center mr-10 ">
+            <li className="p-5 hover:bg-fbmsecondary text-white hover:border-2 rounded-md w-28 text-center mr-10 ">
               <a href="#Home">Home</a>
             </li>
             <li className="p-5 hover:bg-fbmsecondary text-white hover:border-2 rounded-md w-28 text-center mr-10 ">
