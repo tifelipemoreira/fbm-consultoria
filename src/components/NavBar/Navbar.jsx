@@ -2,6 +2,7 @@ import { useState } from "react"; // import state
 import { HiOutlineMenu } from "react-icons/hi";
 import Image from "next/image";
 import logo from "../../../public/logo.png";
+import Link from "next/link";
 export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(true);
   return (
@@ -20,7 +21,7 @@ export default function NavBar() {
         <div className="flex ">
           <ul className=" hidden lg:flex items-center">
             <li className="p-5 hover:bg-fbmsecondary text-white hover:border-2 rounded-md w-28 text-center mr-10 ">
-              <a href="#Home">Home</a>
+              <Link href="#Home"  smooth={true} duration={500}>Home</Link>
             </li>
             <li className="p-5 hover:bg-fbmsecondary text-white hover:border-2 rounded-md w-28 text-center mr-10 ">
               <a href="#Servicos">Serviços</a>
