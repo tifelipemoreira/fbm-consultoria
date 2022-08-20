@@ -7,7 +7,7 @@ export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(true);
   return (
     <>
-      <nav className="flex  bg-gradient-to-r from-fbmprimary ">
+      <nav className="flex  bg-gradient-to-r from-fbmprimary to-transparent ">
         {/* Logo */}
         <div className="flex justify-start items-center w-full h-28 ml-3">
           <Image 
