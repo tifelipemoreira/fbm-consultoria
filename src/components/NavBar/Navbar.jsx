@@ -7,7 +7,7 @@ export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(true);
   return (
     <>
-      <nav className="flex bg-fbmprimary">
+      <nav className="flex  bg-gradient-to-r from-fbmprimary ">
         {/* Logo */}
         <div className="flex justify-start items-center w-full h-28 ml-3">
           <Image 
@@ -20,16 +20,16 @@ export default function NavBar() {
         {/* menu desktop */}
         <div className="flex ">
           <ul className=" hidden lg:flex items-center">
-            <li className="p-5 hover:bg-fbmsecondary text-white hover:border-2 rounded-md w-28 text-center mr-10 ">
-              <Link href="#Home"  smooth={true} duration={500}>Home</Link>
+            <li className="p-5  text-black font-bold text-center mr-10 w-28  ">
+              <Link className="" href="#Home"  smooth={true} duration={500}>Home</Link>
             </li>
-            <li className="p-5 hover:bg-fbmsecondary text-white hover:border-2 rounded-md w-28 text-center mr-10 ">
+            <li className="p-5  text-black font-bold text-center mr-10  w-28 ">
               <a href="#Servicos">Serviços</a>
             </li>
-            <li className="p-5 hover:bg-fbmsecondary text-white hover:border-2 rounded-md w-28 text-center mr-10 ">
+            <li className="p-5  text-black font-bold text-center mr-10 w-28  ">
               <a href="#Portifolio">Portifólio</a>
             </li>
-            <li className="p-5 hover:bg-fbmsecondary text-white hover:border-2 rounded-md w-28 text-center mr-10 ">
+            <li className="p-5  text-black font-bold text-center mr-10 w-28  ">
               <a href="#Contatos">Contatos</a>
             </li>
           </ul>
@@ -40,7 +40,7 @@ export default function NavBar() {
           className="lg:hidden flex justify-center items-center p-6  "
           onClick={() => setIsNavOpen((isNavOpen) => !isNavOpen)}
         >
-          <HiOutlineMenu className="h-10 w-10 " color="white"></HiOutlineMenu>
+          <HiOutlineMenu className="h-10 w-10 " color="black"></HiOutlineMenu>
         </div>
       </nav>
       {/* menu mobile aberto */}
