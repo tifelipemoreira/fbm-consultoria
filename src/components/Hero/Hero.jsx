@@ -25,24 +25,23 @@ const Hero = () => {
         </div>
       </div>
       <div
-        className="flex flex-col py-4 md:min-w-[900px] 
-          mx-1 md:left-1/2 bg-zinc-200
-          border border-slate-300 rounded-xl text-center shadow-xl"
-      >
-        <p>TOTVS Protheus</p>
-        <div className="flex justify-between flex-wrap px-4 ">
+        className="flex flex-col py-4 md:min-w-[55rem] mx-1 md:left-1/2 bg-zinc-200 border border-slate-300 rounded-xl text-center shadow-xl" >
+        <p>Melhore seus resultados</p>
+        <div className="h-full w-full">
+        <div className="flex md:justify-between justify-center md:flex-row flex-col flex-wrap items-baseline px-4 ">
           <p className="flex px-4 py-2 text-slate-500 ">
-            <CodeIcon className="h-6 text-indigo-600 pr-1 " /> Desenvolvimento de Sites
+            <CodeIcon className="h-6 text-indigo-600 pr-1 " /> Melhoria de Processos
           </p>
           <p className="flex px-4 py-2 text-slate-500 ">
-            <CodeIcon className="h-6 text-indigo-600 pr-1 " /> Integrações entre Sistemas Web
+            <CodeIcon className="h-6 text-indigo-600 pr-1 " /> Crescimento
           </p>
           <p className="flex px-4 py-2 text-slate-500 ">
-            <CodeIcon className="h-6 text-indigo-600 pr-1 " /> Desenvolvimento de Integrações API
+            <CodeIcon className="h-6 text-indigo-600 pr-1 " />  Visibilidade
           </p>
           <p className="flex px-4 py-2 text-slate-500 ">
-            <CodeIcon className="h-6 text-indigo-600 pr-1 " /> Desenvolvimento ADVPL Protheus
+            <CodeIcon className="h-6 text-indigo-600 pr-1 " /> Economia
           </p>
+        </div>
         </div>
       </div>
     </div>
