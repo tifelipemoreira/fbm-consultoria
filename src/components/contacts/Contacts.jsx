@@ -5,36 +5,99 @@ const Contacts = () => {
   return (
     <div
       name={"Contacts"}
-      className=" w-full h-[35rem] flex flex-col items-center "
+      className=" w-full h-[39rem]"
     >
       <div className=" mb-2 w-full h-40 flex flex-col items-center ">
-        <p className="p-2 text-fbmsecondary text-xl">
+        <p className="p-2 text-fbmsecondary text-2xl">
           Se interessou nos nossos serviços?
         </p>
-        <p className="pb-2 text-fbmsecondary text-lg flex flex-col items-center">
+        <p className="pb-2 text-fbmsecondary  flex flex-col items-center text-2xl">
           {" "}
           Entre em Contato em nosso
           <Link href="https://api.whatsapp.com/send?phone=5562982575695">
-            <a className="underline pl-2 pr-4 text-green-600 " target="_blank ">
-              <p className="flex flex-row p-2 text-2xl">
-                WhatsApp{" "}
-                <span className="pl-2">
+            <a
+              className="underline pl-2 pr-4 text-green-600 p-2 text-2xl"
+              target="_blank "
+            >
+              <span className="pl-2 flex flex-row">
+                <span className="pr-2"> WhatsApp </span>{" "}
+                <span className="">
                   <WhatsApp></WhatsApp>
                 </span>
-              </p>
+              </span>
             </a>
           </Link>
         </p>
-      </div>
-      <div className="border-2 border-black md:w-[40rem] w-96 h-96">
-        <p className="p-2 "> Ou deixe seu recado</p>
-        <form className="">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            type="username"
-          >
-            Username
-          </label>
+        <p className="text-fbmsecondary font-bold  mb-1 md:mb-0 text-center text-2xl pb-2 pt-6 ">
+          Se preferir deixe seu contato! Nós te ligamos.
+        </p>
+        <form className="pt-4 w-full max-w-xl ">
+          <div className="md:flex md:items-center mb-6">
+            <div className="md:w-1/3">
+              <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
+                Nome
+              </label>
+            </div>
+            <div className="md:w-2/3">
+              <input
+                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                id="inline-full-name"
+                type="text"
+                placeholder="Nome Completo"
+              />
+            </div>
+          </div>
+          <div className="md:flex md:items-center mb-6">
+            <div className="md:w-1/3">
+              <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
+                E-mail
+              </label>
+            </div>
+            <div className="md:w-2/3">
+              <input
+                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                id="inline-full-name"
+                type="email"
+                placeholder="email@email.com"
+              />
+            </div>
+          </div>
+          <div className="md:flex md:items-center mb-6">
+            <div className="md:w-1/3">
+              <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
+                Telefone
+              </label>
+            </div>
+            <div className="md:w-2/3">
+              <input
+                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                id="inline-full-name"
+                type="tel"
+                placeholder="Telefone"
+              />
+            </div>
+          </div>
+
+          <div className="md:flex md:items-center mb-6">
+            <div className="md:w-1/3"></div>
+            <label className="md:w-2/3 block text-gray-500 font-bold">
+              <input className="mr-2 leading-tight" type="checkbox" />
+              <span className="text-sm">
+                Aceito receber mensagens de FBM Tecnologia.
+              </span>
+            </label>
+          </div>
+          <div className="md:flex md:items-center">
+            <div className="md:w-1/3"></div>
+            <div className="md:w-2/3">
+              <button
+                className="shadow bg-fbmsecondary hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                type="button"
+              >
+                Enviar
+              </button>
+            </div>
+          </div>
         </form>
       </div>
     </div>
