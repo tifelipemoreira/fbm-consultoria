@@ -3,9 +3,8 @@ import NavBar from "../components/NavBar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
-import AllInOne from "../components/AllInOne/AllInOne";
-import Pricing from "../components/Pricing/Pricing";
-import Support from "../components/Support/Support";
+import Contacts from "../components/contacts/Contacts";
+
 
 // exemplos https://github.com/ndpniraj/react-ecom/tree/master/src/components
 //https://github.com/Sridhar-C-25/reacttailwind_footer
@@ -26,9 +25,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <About />
-      <Support />
-      <AllInOne />
-      <Pricing />
+      <Contacts/>
       <Footer />
     </div>
   );
