@@ -14,7 +14,7 @@ const Contacts = () => {
   const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault();
-    console.log(event.target);
+    //console.log(event.target);
     // Get data from the form.
     const data = {
       nome: event.target.nome.value,
@@ -22,14 +22,11 @@ const Contacts = () => {
       telefone: event.target.telefone.value,
       checkbox: isChecked,
     };
-    console.log(isChecked);
-    console.log(data);
+    //console.log(isChecked);
+    //console.log(data);
 
     setIsChecked(!isChecked);
     setIsSubmit(!isSubmit);
-    event.target.nome.value = "";
-    event.target.email.value = "";
-    event.target.telefone.value = "";
   };
   return (
     <div
