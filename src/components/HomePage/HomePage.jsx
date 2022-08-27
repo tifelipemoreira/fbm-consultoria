@@ -1,12 +1,9 @@
 import React from "react";
 import {
-  GlobeAltIcon,
-  CodeIcon,
-  CollectionIcon,
-  DesktopComputerIcon,
+  CodeIcon
 } from "@heroicons/react/solid";
 
-const Hero = () => {
+const HomePage = () => {
   return (
     <div name="home" className="w-full h-[30rem] bg-fbmprimary justify-between ">
       <div className="max-w-[60rem] m-auto text-center flex ">
@@ -48,4 +45,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HomePage;

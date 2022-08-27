@@ -19,17 +19,17 @@ export default function NavBar() {
         </div>
         {/* menu desktop */}
         <div className="flex ">
-          <ul className=" hidden lg:flex items-center">
-            <li className="p-5  text-black font-bold text-center mr-10 w-28  ">
-              <Link className="" href="#Home"  smooth={true} duration={500}>Home</Link>
+          <ul className=" hidden lg:flex items-center text-gray-900 font-bold text-center">
+            <li className="p-5   mr-10 w-28  ">
+              <Link className="" href="#home">Home</Link>
             </li>
-            <li className="p-5  text-black font-bold text-center mr-10  w-28 ">
+            <li className="p-5   mr-10  w-28 ">
               <a href="#Servicos">Serviços</a>
             </li>
-            <li className="p-5  text-black font-bold text-center mr-10 w-28  ">
+            <li className="p-5   mr-10 w-28  ">
               <a href="#Portifolio">Portifólio</a>
             </li>
-            <li className="p-5  text-black font-bold text-center mr-10 w-28  ">
+            <li className="p-5   mr-10 w-28  ">
               <a href="#Contatos">Contatos</a>
             </li>
           </ul>
@@ -52,7 +52,7 @@ export default function NavBar() {
               : "lg:hidden  w-full bg-fbmprimary rounded-md  absolute flex justify-center  "
           }
         >
-          <ul className=" p-5 text-white text-2xl ">
+          <ul className=" p-5 text-gray-400 text-2xl ">
             <li className="hover:underline rounded-md text-center w-full p-2 m-1  ">
               <a href="#Home">Home</a>
             </li>

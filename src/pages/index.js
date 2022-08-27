@@ -1,8 +1,8 @@
 import Heads from "../components/Heads/Heads";
 import NavBar from "../components/NavBar/Navbar";
 import Footer from "../components/Footer/Footer";
-import Hero from "../components/Hero/Hero";
-import About from "../components/About/About";
+import HomePage from "../components/HomePage/HomePage";
+import Services from "../components/Services/Services";
 import Contacts from "../components/contacts/Contacts";
 
 
@@ -23,8 +23,8 @@ export default function Home() {
         href="/favicon.ico"
       ></Heads>
       <NavBar />
-      <Hero />
-      <About />
+      <HomePage />
+      <Services />
       <Contacts/>
       <Footer />
     </div>

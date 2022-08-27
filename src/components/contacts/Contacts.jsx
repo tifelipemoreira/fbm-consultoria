@@ -5,7 +5,7 @@ const Contacts = () => {
   return (
     <div
       name={"Contacts"}
-      className=" w-full h-[39rem]"
+      className=" w-full h-[39rem] flex flex-col items-center"
     >
       <div className=" mb-2 w-full h-40 flex flex-col items-center ">
         <p className="p-2 text-fbmsecondary text-2xl">
@@ -16,24 +16,25 @@ const Contacts = () => {
           Entre em Contato em nosso
           <Link href="https://api.whatsapp.com/send?phone=5562982575695">
             <a
-              className="underline pl-2 pr-4 text-green-600 p-2 text-2xl"
+              className="underline pl-2 pr-4 text-fbmsecondary p-2 text-2xl"
               target="_blank "
             >
               <span className="pl-2 flex flex-row">
                 <span className="pr-2"> WhatsApp </span>{" "}
                 <span className="">
                   <WhatsApp></WhatsApp>
+                  
                 </span>
               </span>
             </a>
           </Link>
         </p>
-        <p className="text-fbmsecondary font-bold  mb-1 md:mb-0 text-center text-2xl pb-2 pt-6 ">
-          Se preferir deixe seu contato! Nós te ligamos.
+        <p className="text-fbmsecondary font-bold  mb-1 md:mb-0  text-2xl pb-2 pt-6 ">
+          Se preferir, nós entramos em contato!
         </p>
-        <form className="pt-4 w-full max-w-xl ">
+        <form className="pt-4 w-[28rem] md:w-full max-w-xl ">
           <div className="md:flex md:items-center mb-6">
-            <div className="md:w-1/3">
+            <div className="md:w-1/4">
               <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
                 Nome
               </label>
@@ -48,7 +49,7 @@ const Contacts = () => {
             </div>
           </div>
           <div className="md:flex md:items-center mb-6">
-            <div className="md:w-1/3">
+            <div className="md:w-1/4">
               <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
                 E-mail
               </label>
@@ -63,7 +64,7 @@ const Contacts = () => {
             </div>
           </div>
           <div className="md:flex md:items-center mb-6">
-            <div className="md:w-1/3">
+            <div className="md:w-1/4">
               <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
                 Telefone
               </label>
@@ -77,7 +78,6 @@ const Contacts = () => {
               />
             </div>
           </div>
-
           <div className="md:flex md:items-center mb-6">
             <div className="md:w-1/3"></div>
             <label className="md:w-2/3 block text-gray-500 font-bold">
