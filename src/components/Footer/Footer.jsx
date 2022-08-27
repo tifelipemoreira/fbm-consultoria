@@ -9,15 +9,15 @@ import { Icons } from "./Menus";
 
 const Footer = () => {
   return (
-    <footer className=" w-full h-48 bg-fbmprimary">
+    <footer name="Footer"  className=" w-full h-48 bg-fbmprimary">
       <div className="flex justify-center pt-6">
         <SocialIcons Icons={Icons} />
       </div>
       <div className="flex justify-center">
         <ul className="flex flex-row justify-around p-6  w-[28rem] text-2xl text-gray-400">
         <li><Link className="" href="#Home">Home</Link></li>
-        <li><Link className="" href="#Home">Serviços</Link></li>
-        <li><Link className="" href="#Home">Contatos</Link></li>
+        <li><Link className="" href="#Servicos">Serviços</Link></li>
+        <li><Link className="" href="#Contatos">Contatos</Link></li>
         </ul>
       </div>
       <div className="flex justify-center text-fbmsecondary ">

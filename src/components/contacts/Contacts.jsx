@@ -1,10 +1,39 @@
 import React from "react";
 import { WhatsApp } from "../../assets/icons";
 import Link from "next/link";
+import { useState } from "react"; // import state
+
 const Contacts = () => {
+  const [isChecked, setIsChecked] = useState(false);
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const onChangeHandle = async () => {
+    setIsChecked(!isChecked);
+  };
+
+  const handleSubmit = async (event) => {
+    // Stop the form from submitting and refreshing the page.
+    event.preventDefault();
+    console.log(event.target);
+    // Get data from the form.
+    const data = {
+      nome: event.target.nome.value,
+      email: event.target.email.value,
+      telefone: event.target.telefone.value,
+      checkbox: isChecked,
+    };
+    console.log(isChecked);
+    console.log(data);
+
+    setIsChecked(!isChecked);
+    setIsSubmit(!isSubmit);
+    event.target.nome.value = "";
+    event.target.email.value = "";
+    event.target.telefone.value = "";
+  };
   return (
     <div
-      name={"Contacts"}
+      name={"Contatos"}
       className=" w-full h-[39rem] flex flex-col items-center"
     >
       <div className=" mb-2 w-full h-40 flex flex-col items-center ">
@@ -23,82 +52,105 @@ const Contacts = () => {
                 <span className="pr-2"> WhatsApp </span>{" "}
                 <span className="">
                   <WhatsApp></WhatsApp>
-                  
                 </span>
               </span>
             </a>
           </Link>
         </p>
-        <p className="text-fbmsecondary font-bold  mb-1 md:mb-0  text-2xl pb-2 pt-6 ">
+        <p className="text-fbmsecondary font-bold  mb-1 md:mb-0  text-xl pb-2 pt-6 ">
           Se preferir, nós entramos em contato!
         </p>
-        <form className="pt-4 w-[28rem] md:w-full max-w-xl ">
-          <div className="md:flex md:items-center mb-6">
-            <div className="md:w-1/4">
-              <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                Nome
-              </label>
-            </div>
-            <div className="md:w-2/3">
-              <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                id="inline-full-name"
-                type="text"
-                placeholder="Nome Completo"
-              />
-            </div>
-          </div>
-          <div className="md:flex md:items-center mb-6">
-            <div className="md:w-1/4">
-              <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                E-mail
-              </label>
-            </div>
-            <div className="md:w-2/3">
-              <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                id="inline-full-name"
-                type="email"
-                placeholder="email@email.com"
-              />
-            </div>
-          </div>
-          <div className="md:flex md:items-center mb-6">
-            <div className="md:w-1/4">
-              <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                Telefone
-              </label>
-            </div>
-            <div className="md:w-2/3">
-              <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                id="inline-full-name"
-                type="tel"
-                placeholder="Telefone"
-              />
-            </div>
-          </div>
-          <div className="md:flex md:items-center mb-6">
-            <div className="md:w-1/3"></div>
-            <label className="md:w-2/3 block text-gray-500 font-bold">
-              <input className="mr-2 leading-tight" type="checkbox" />
-              <span className="text-sm">
-                Aceito receber mensagens de FBM Tecnologia.
-              </span>
-            </label>
-          </div>
-          <div className="md:flex md:items-center">
-            <div className="md:w-1/3"></div>
-            <div className="md:w-2/3">
-              <button
-                className="shadow bg-fbmsecondary hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                type="button"
-              >
-                Enviar
-              </button>
-            </div>
-          </div>
-        </form>
+        <div>
+          {isSubmit ? (
+            <p className="text-fbmsecondary font-bold  mb-1 md:mb-0 text-center text-xl pb-2 pt-48 ">
+              Obrigado! Em Breve entraremos em contato.
+            </p>
+          ) : (
+            <form
+              onSubmitCapture={handleSubmit}
+              className="pt-4 w-[22rem] md:w-full max-w-xl "
+            >
+              <div className="md:flex md:items-center mb-6">
+                <div className="md:w-1/4">
+                  <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
+                    Nome
+                  </label>
+                </div>
+                <div className="md:w-2/3">
+                  <input
+                    required
+                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                    id="nome"
+                    type="text"
+                    name="nome"
+                    placeholder="Nome Completo"
+                  />
+                </div>
+              </div>
+              <div className="md:flex md:items-center mb-6">
+                <div className="md:w-1/4">
+                  <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
+                    E-mail
+                  </label>
+                </div>
+                <div className="md:w-2/3">
+                  <input
+                    required
+                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="email@email.com"
+                  />
+                </div>
+              </div>
+              <div className="md:flex md:items-center mb-6">
+                <div className="md:w-1/4">
+                  <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
+                    Telefone
+                  </label>
+                </div>
+                <div className="md:w-2/3">
+                  <input
+                    required
+                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                    id="telefone"
+                    name="telefone"
+                    type="tel"
+                    placeholder="Telefone"
+                  />
+                </div>
+              </div>
+              <div className="md:flex md:items-center mb-6">
+                <div className="md:w-1/3"></div>
+                <label className="md:w-2/3 block text-gray-500 font-bold">
+                  <input
+                    className="mr-2 leading-tight"
+                    type="checkbox"
+                    id="checkbox"
+                    name="checkbox"
+                    checked={isChecked}
+                    onChange={onChangeHandle}
+                  />
+                  <span className="text-sm">
+                    Aceito receber mensagens de FBM Tecnologia.
+                  </span>
+                </label>
+              </div>
+              <div className="md:flex md:items-center">
+                <div className="md:w-1/3"></div>
+                <div className="md:w-2/3">
+                  <button
+                    className="shadow bg-fbmsecondary hover:bg-fbmprimary focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                    type="submit"
+                  >
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </form>
+          )}
+        </div>
       </div>
     </div>
   );

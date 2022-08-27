@@ -5,7 +5,7 @@ import {
 
 const HomePage = () => {
   return (
-    <div name="home" className="w-full h-[30rem] bg-fbmprimary justify-between ">
+    <div name="Home" className="w-full h-[30rem] bg-fbmprimary justify-between ">
       <div className="max-w-[60rem] m-auto text-center flex ">
         <div className="flex flex-col w-full px-2 py-8 ">
           <h1 className="py-3 text-3xl md:text-6xl font-bold  text-center text-gray-300">

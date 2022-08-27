@@ -21,16 +21,13 @@ export default function NavBar() {
         <div className="flex ">
           <ul className=" hidden lg:flex items-center text-gray-900 font-bold text-center">
             <li className="p-5   mr-10 w-28  ">
-              <Link className="" href="#home">Home</Link>
+            <Link className="" href="#Home" >Home</Link>
             </li>
             <li className="p-5   mr-10  w-28 ">
-              <a href="#Servicos">Serviços</a>
+            <Link className="" href="#Servicos">Serviços</Link>
             </li>
             <li className="p-5   mr-10 w-28  ">
-              <a href="#Portifolio">Portifólio</a>
-            </li>
-            <li className="p-5   mr-10 w-28  ">
-              <a href="#Contatos">Contatos</a>
+            <Link className="" href="#Contatos">Contatos</Link>
             </li>
           </ul>
         </div>
@@ -48,22 +45,19 @@ export default function NavBar() {
         <div
           className={
             isNavOpen
-              ? "hidden "
-              : "lg:hidden  w-full bg-fbmprimary rounded-md  absolute flex justify-center  "
+              ? "hidden"
+              : "lg:hidden h-60  w-full bg-fbmprimary rounded-md  absolute flex justify-center items-center "
           }
         >
-          <ul className=" p-5 text-gray-400 text-2xl ">
+          <ul  className=" p-5 text-gray-400 text-2xl " onClick={() => setIsNavOpen((isNavOpen) => !isNavOpen)}>
             <li className="hover:underline rounded-md text-center w-full p-2 m-1  ">
-              <a href="#Home">Home</a>
+            <Link className="" href="#Home" >Home</Link>
             </li>
             <li className="hover:underline rounded-md text-center w-full p-2 m-1 ">
-              <a href="#Servicos">Serviços</a>
+            <Link className="" href="#Servicos">Serviços</Link>
             </li>
             <li className="hover:underline rounded-md text-center w-full p-2 m-1">
-              <a href="#Portifólio">Portifólio</a>
-            </li>
-            <li className="hover:underline rounded-md text-center w-full p-2 m-1 ">
-              <a href="#Contatos">Contatos</a>
+            <Link className="" href="#Contatos">Contatos</Link>
             </li>
           </ul>
         </div>
