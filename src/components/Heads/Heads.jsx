@@ -5,7 +5,7 @@ export default function Heads(props) {
     <Head>
       <title>{props.title}</title>
       <meta name={props.name} content={props.content} />
-      <link rel={props.rel} href={props.href} />
+      <meta name="google-site-verification" content="eor8AqCftBzTeDi7RsRQLv233M9470fIJwiStWK5FBs" />
     </Head>
   );
 };
